@@ -1,0 +1,105 @@
+.articles-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.article-image {
+  /* flex: 1; */
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+  height: 100px;
+  width: 100px;
+}
+
+.article-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Ensures the image fits within the container without distortion */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.article-content {
+  flex: 2;
+  padding: 10px;
+}
+
+.article-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.article-content p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.article-tags {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.tag-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tag-button:hover {
+  background: #0056b3;
+}
+
+.refresh-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #0056b3;
+}
